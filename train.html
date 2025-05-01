@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Train Ticket Booking, Book IRCTC Train Tickets Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/rail_vertical.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="top-left-container">
+                <a href="index.html"><img src="images/rdc-redbus-logo.svg" alt=""></a>
+                <span></span>
+                <a href="index.html" class="bus-tickets">
+                    <img src="images/rdc-redbus-logo.svg" alt="">
+                    <div href="index.html">Bus Tickets</div>
+                </a>
+                <div class="bus-tickets">
+                    <a href="train.html"><img src="images/rail_vertical.svg" alt=""></a>
+                    <a href="train.html">Train Tickets</a>
+                    <span>₹60 off</span>
+                </div>
+            </div>
+            <div class="top-right-container">
+
+                <div class="help right">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Help</span>
+                </div>
+                <div class="english right">
+                    <i class="fa-solid fa-language"></i>
+                    <select name="laguage" id="laguage">
+                        <option value="">English</option>
+                        <option value="">हिंदी (Hindi)</option>
+                        <option value="">தமிழ் (Tamil)</option>
+
+                    </select>
+
+                </div>
+                <div class="account right">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <select id="options" name="options">
+                        <option value="">Account</option>
+                        <option value="cancel-ticket">Cancel Ticket</option>
+                        <option value="change-travel-date">Change Travel Date</option>
+                        <option value="show-my-ticket">Show My Ticket</option>
+                        <option value="email-sms">Email/SMS</option>
+                        <option value="login-sign-up">Login/Sign Up</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <!-- <nav>
+        <div class="nav-left">
+          <a href="index.html"> <img src="images/rb_logo.svg" alt=""></a> 
+            <a href="index.html">Bus Tickets</a>
+            <a href="train.html">redRail</a>
+
+        </div>
+        <div class="nav-right">
+
+            <div class="help2">
+                <i style="color: white;" class="fa-solid fa-headset"></i>
+                <span>Help</span>
+
+            </div>
+
+            <div class="help2">
+                <i style="color: white; font-weight: lighter;" class="fa-regular fa-circle-user"></i>
+                <i style="color: white;" class="fa-solid fa-angle-down"></i>
+
+            </div>
+
+        </div>
+    </nav> -->
+
+    <section>
+        <div class="top-banner">
+
+            <img src="images/banner.svg" width="100%" height="100%" alt="">
+            <div class="banner_overlay"></div>
+
+            <div class="rails-branding">
+                <span style="font-size: 45px;font-weight: 700;">Train Ticket Booking</span>
+                <div><img src="/images/irctc_b.svg" alt=""><span style="margin-left: 100px;">IRCTC Authorised
+                        Partner</span>
+                </div>
+                <div class="from-booking">Bookings open for summer holidays</div>
+
+            </div>
+            <div class="from-train">
+
+                <div class="from-box1-train">
+                    <div class="bus-icon">
+                        <i class="fa-solid fa-train"></i>
+                    </div>
+                    <div class="from-input-box-train">
+                        <p>From</p>
+                    </div>
+
+                </div>
+                <div class="from-box2-train" style="border: 1px solid rgb(172, 170, 170);">
+                    <div class="bus-icon">
+                        <i class="fa-solid fa-train"></i>
+                    </div>
+                    <div class="from-input-box-train">
+                        <p for="">To </p>
+                    </div>
+                </div>
+                <div class="from-box2-train" style="width: 363px; border: 1px solid rgb(172, 170, 170);">
+                    <div class="bus-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="from-input-box-train">
+                        <p for="">Date of Journey</p>
+                        <span style="font-weight: bold; color: black;">16 Apr, 2025</span>
+                    </div>
+                    <div class="btn-wrp">
+                        <div class="btn-wrp1">
+                            <button class="btnw1">Tomorrow</button>
+                        </div>
+                        <div class="btn-wrp1">
+                            <button class="btnw1" style="padding-left: 10px;">Day After</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-radius: 20px; margin: 0px 10px 0px -40px; padding: 0px 10px;"
+                    class="from-box1-train">
+                    <div class="bus-icon">
+                        <img src="/images/fc.svg" alt="">
+                    </div>
+                    <div class="from-input-box-train">
+                        <samp>Free Cancellation</samp>
+                        <p style="font-size: 12px;">Instant full fare refund</p>
+                    </div>
+                    <div class="icon-no-off">
+                        <div></div>
+                    </div>
+
+                </div>
+                <div class="search-trains">
+                    <button><i style="color: white;" class="fa-solid fa-magnifying-glass"></i>Search Trains</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="offer-heading"></h1>
+        <div class="train-all-itme">
+            <div class="order-food">
+                <div class="food-itme1">
+                    <div>
+                        <img src="/images/pnr.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Check PNR status</p>
+                    </div>
+                </div>
+                <div class="food-itme1">
+                    <div>
+                        <img src="/images/lts.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Check PNR status</p>
+                    </div>
+                </div>
+                <div class="food-itme1">
+                    <div>
+                        <img src="/images/food.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Check PNR status</p>
+                    </div>
+                </div>
+                <div class="food-itme1">
+                    <div>
+                        <img src="/images/madad.svg" alt="">
+                    </div>
+                    <div>
+                        <p>Check PNR status</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>Why Book With redRail</h2>
+                    <div>
+                        <button>View All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-whith-contaner">
+                <div class="cadewre">
+                    <div>
+                        <div class="resd">Redrail confirm</div>
+                        <p>Confirm ticket on waitlisted trains</p>
+                    </div>
+                    <div style="margin-right: -20px;">
+                        <img src="/images/redRail_confirm.png" alt="">
+                    </div>
+                </div>
+                <div class="cadewre">
+                    <div>
+                        <div class="resd" style="color: #7331df;">Seat Guarantee</div>
+                        <p>on waitlisted tickets or 3X refund</p>
+                    </div>
+                    <div style="margin-right: -20px;">
+                        <img src="/images/seat_guarantee.png" alt="">
+                    </div>
+                </div>
+                <div class="cadewre">
+                    <div>
+                        <div class="resd" style="color: #007b2d;">Connecting trains</div>
+                        <p>Connecting trains option available</p>
+                    </div>
+                    <div style="margin-right: -20px;">
+                        <img src="/images/connecting_train.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>Offers</h2>
+                </div>
+            </div>
+            <div class="offers-contaner">
+                <div class="offers-itmes-train">
+                    <span>Additional offers</span>
+                    <h4>Get Rs 60 off on train tickets</h4>
+                    <p>Valid till 30 Apr</p>
+                    <div>
+                        <button><i class="fa-regular fa-tag"></i>SUPER60</button>
+                    </div>
+                </div>
+                <div class="offers-itmes-train">
+                    <span>Additional offers</span>
+                    <h4>Get Rs 60 off on train tickets</h4>
+                    <p>Valid till 30 Apr</p>
+                    <div>
+                        <button><i class="fa-regular fa-tag"></i>SUPER60</button>
+                    </div>
+                </div>
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>Videos</h2>
+                </div>
+            </div>
+            <div class="train-video">
+                <div class="train-video1">
+                    <div class="video-conant">
+                        <span>How to book IRCTC train tickets</span>
+                    </div>
+                    <div class="video-train">
+
+                    </div>
+                </div>
+                <div class="train-video1">
+                    <div class="video-conant">
+                        <span>How to book IRCTC train tickets</span>
+                    </div>
+                    <div class="video-train">
+
+                    </div>
+                </div>
+                <div class="train-video1">
+                    <div class="video-conant">
+                        <span>How to book IRCTC train tickets</span>
+                    </div>
+                    <div class="video-train">
+
+                    </div>
+                </div>
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>Get the redRail App</h2>
+                </div>
+            </div>
+            <div class="redail-train">
+                <div class="flix-redail">
+                    <img src="/images/appInstall.png" alt="">
+                    <div class="redail-contant">
+                        <span>Rated 4.5 on Play Store</span>
+                        <span>Download for exciting offers!</span>
+                    </div>
+                </div>
+                <div class="redail-btn">
+                    <button>Download app</button>
+                </div>
+            </div>
+            <div class="booked-ticket-routes">
+                <div class="book-with-redrail">
+                    <div class="book-with">
+                        <h2>Most Booked Train Ticket Routes</h2>
+                    </div>
+                </div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p> MAS (Chennai) to SBC (Bangalore)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>SBC (Bangalore) to MAS (Chennai)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>CSMT (Mumbai) to PUNE (Pune)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>PUNE (Pune) to CSMT (Mumbai)p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>MAS (Chennai) to CBE (Coimbatore)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>SBC (Bangalore) to MAS (Chennai)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>CBE (Coimbatore) to MAS (Chennai)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>MYS (Mysuru) to SBC (Bangalore)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>MAS (Chennai) to MDU (Madurai)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>MDU (Madurai) to MAS (Chennai)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+                <div class="booked-ticket-border"></div>
+                <div class="booked-ticket-contanat">
+                    <div>
+                        <p>SBC (Bangalore) to MYS (Mysuru)</p>
+                    </div>
+                    <div>
+                        <button>Search Train</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>What users say about redRail</h2>
+                </div>
+            </div>
+            <div class="about-redRail">
+                <div class="about-redRail-card">
+                    <div class="redRail-card-text">Seamless Booking Experience</div>
+                    <div class="about-redRail-info">
+                        <div class="about-redRail-name">Harish</div>
+                    </div>
+                </div>
+                <div class="about-redRail-card">
+                    <div class="redRail-card-text">Satisfying Train Ticket Booking Experience</div>
+                    <div class="about-redRail-info">
+                        <div class="about-redRail-name">Budupula Nagaraj</div>
+                    </div>
+                </div>
+                <div class="about-redRail-card">
+                    <div class="redRail-card-text">Top-Rated Seat Guarantee</div>
+                    <div class="about-redRail-info">
+                        <div class="about-redRail-name">Ramu Dhanvijay</div>
+                    </div>
+                </div>
+                <div class="about-redRail-card">
+                    <div class="redRail-card-text">Reliable Seat Guarantee Service</div>
+                    <div class="about-redRail-info">
+                        <div class="about-redRail-name">C Deepak Kumar</div>
+                    </div>
+                </div>
+                <div class="about-redRail-card">
+                    <div class="redRail-card-text">Effortless Booking and Refund</div>
+                    <div class="about-redRail-info">
+                        <div class="about-redRail-name">Akhil</div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-with-redrail">
+                <div class="book-with">
+                    <h2>IRCTC Train Ticket Booking With RedRail</h2>
+                </div>
+                <div class="irctc-booking">
+                    <p>In the past, if you wanted to book train tickets, you had to physically visit ticket reservation
+                        centres and stand in long queues for hours. However, due to rising technology advancements, you
+                        can
+                        book IRCTC train tickets online from your home. redRail is an online train ticket booking
+                        platform
+                        that allows you to get tickets in just a few minutes.
+
+                        Utilising the super-convenient and user-friendly interface of redRail, you only need to enter
+                        the
+                        origin station, destination station, and travel date details. Instantly, the platform will
+                        display
+                        the list of available trains of your chosen route and travel date. As an authorised train ticket
+                        booking platform by IRCTC, redRail ensures the authenticity of your bookings.</p>
+                </div>
+            </div>
+            <div class="book-with-redrail" style="background-color: #f2f2f8;">
+                <div class="book-with">
+                    <h2>Step-by-step Guide to Online Train Booking with redRail</h2>
+                </div>
+                <div class="irctc-booking">
+                    <p>You can book train tickets from redRail in just 5 steps. Here's how to book and pay for a rail
+                        ticket online.</p>
+                </div>
+                <div class="guide-to-online">
+                    <div>
+                        <img src="/images/mob2_cont_1728021403.webp" alt="" width="220px" height="425px">
+                    </div>
+                    <div class="guide-to-online-contant">
+                        <div class="guide-to-online-contant1">
+                            <div class="guide-to-onl">
+                                <span>Step 1:</span> Visit redRail and Choose Journey Date
+                            </div>
+                            <p>For booking a train ticket, you need first to visit the redRail platform. On the website,
+                                you can choose the date of your journey, as well as the boarding and destination
+                                stations. Then, click on 'Search trains' to proceed with the booking.</p>
+                        </div>
+                        <div class="guide-to-online-contant1">
+                            <div class="guide-to-onl">
+                                <span>Step 2:</span> Visit redRail and Choose Journey Date
+                            </div>
+                        </div>
+                        <div class="guide-to-online-contant1">
+                            <div class="guide-to-onl">
+                                <span>Step 3:</span> Visit redRail and Choose Journey Date
+                            </div>
+                        </div>
+                        <div class="guide-to-online-contant1">
+                            <div class="guide-to-onl">
+                                <span>Step 4:</span> Visit redRail and Choose Journey Date
+                            </div>
+                        </div>
+                        <div class="guide-to-online-contant1">
+                            <div class="guide-to-onl">
+                                <span>Step 5:</span> Visit redRail and Choose Journey Date
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-with">
+                <h2>Why Choose redRail for IRCTC Rail Ticket Booking?</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>To experience a user-friendly and easy-to-use platform for train booking online, redRail offers a
+                    seamless train tickets booking experience for passengers. Take a look at the reasons why you should
+                    opt for redRail to book train tickets online.
+                </p>
+                <ul>
+                    <li><strong>Authorised Partner of IRCTC</strong>
+                        <p>The reason for choosing redRail for IRCTC train ticket booking is that it is the authorised
+                            partner of IRCTC. Therefore, all the information available on the platform is authentic. You
+                            can easily check PNR status, track live train running status, check seat availability and
+                            much more on redRail for a hassle-free train journey. Checking train tickets availability is
+                            an extremely convenient process on redRail. </p>
+                    </li>
+                    <li><strong>Refund for Cancellation of Train Tickets</strong>
+                        <p>Train tickets online booking through redRail, ensures easy cancellation of tickets if
+                            required. The cancellation policy details for the ticket are mentioned on the website, and
+                            you will get a refund for most bookings. redRail also provides instant refunds for IRCTC
+                            train ticket booking made through UPI payment modes. </p>
+                    </li>
+                    <li><strong>Round-the-Clock Customer Assistanc</strong>
+                        <p>Customer support for redRail is available 24/7 to help you with train bookings. Reach out to
+                            customer service for any issues related to online train ticket booking. The customer support
+                            staff will provide instant resolution for your problems and answer all your queries. You can
+                            quickly seek information on train ticket status and other train-related information. </p>
+                    </li>
+                    <li><strong>Amazing Train Ticket Discounts and Offers </strong>
+                        <p>Through redRail, you can access enticing discount offers and deals periodically designed to
+                            save your money on your train journeys. For example, if you are booking train tickets to
+                            Bangalore or any other city on redRail, you may waive service fees or additional payment
+                            gateway charges at the time of train bookings as part of the introductory booking
+                            incentives. </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="book-with">
+                <h2>Check PNR Status of your IRCTC Ticket Booking</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>Besides booking train tickets, you may check PNR status easily and quickly on redRail's website or
+                    app. Checking train ticket status involves the following steps:</p>
+                <p><strong>Step 1 -</strong> Visit the redRail by redBus website or application. </p>
+                <p><strong>Step 2 -</strong> Select the PNR Status option.</p>
+                <p><strong>Step 3 -</strong> Enter a 10-digit PNR number and press the "Check Status" button.</p>
+                <p><strong>Step 4 -</strong> The PNR status will appear on the screen. </p>
+                <p>Review the information mentioned on PNR status to determine if your IRCTC rail ticket booking is on
+                    the waiting list or has been confirmed. Also, check for any updates about the train schedule,
+                    reservation details, or other relevant information.</p>
+                <p>You can check the Passenger Name Record (PNR) Number in the days before the departure date. The train
+                    ticket status on redRail will display all railway reservation-related information instantly.</p>
+            </div>
+            <div class="book-with">
+                <h2>IRCTC Train Ticket Booking Timings</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>The train ticket booking online timings may vary depending on the travel class and the type of ticket
+                    you want to book. Below is a table outlining the train ticket booking timings for the different
+                    travel classes and the different types of tickets.</p>
+            </div>
+
+
+
+            <div class="booking-time">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Train Ticket Type </th>
+                            <th>Online Railway Ticket Booking Timings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>General and non-Tatkal Tickets </td>
+                            <td>
+                                12.20 AM to 11.45 PM on all 7 days of the week including Sundays</td>
+                        </tr>
+                        <tr>
+                            <td>Tatkal Tickets</td>
+                            <td>
+                                <div>For AC travel classes - 10.00 AM to 11.00 AM on all 7 days of the week including
+                                    Sundays. <br>
+                                    For non-AC travel classes - 11.00 AM to 12.00 PM on all 7 days of the week including
+                                    Sundays
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="book-with">
+                <h2>IRCTC Railway Ticket Booking Cancellation</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>If you’ve booked a train ticket online through the IRCTC website or the redRail website or app, you
+                    can easily cancel your reservation quickly. Note that you can cancel your e-ticket only until IRCTC
+                    chart preparation is over. Once the chart is prepared, you cannot cancel your e-ticket. However,
+                    you’ll need to file a ticket deposit receipt (TDR) online to seek a refund depending upon the
+                    eligibility criteria. IRCTC charts are prepared on the previous night for trains departing until
+                    noon the next day.
+
+                    If you’re travelling with your family or as a group, you have the option to cancel the train ticket
+                    booking entirely or selectively cancel tickets for specific passengers. After the cancellation of
+                    train tickets, you will receive a refund, subject to eligibility and with the deduction of
+                    cancellation charges. These cancellation charges will vary depending on factors such as the travel
+                    class and the timing of the cancellation request.</p>
+            </div>
+            <div class="book-with">
+                <h2>How to Cancel IRCTC Train Ticket Booking Online?</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>Cancelling train tickets online is easy and quick. If you want to cancel railway tickets online
+                    booked on redRail, here's what you need to do.</p> <br>
+                <p><strong>Stepwise Instructions to Cancel IRCTC Train Tickets on redRail </strong></p><br>
+                <p>Below is the step-by-step tutorial on how to cancel a train ticket online. </p>
+                <ul>
+                    <li>
+                        <p><strong>Step 1:</strong> Log into the redRail website or smartphone application using your
+                            credentials</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 2:</strong> Click on the ‘My Bookings’ tab at the bottom of the redRail
+                            application.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 3:</strong> The history of tickets booked tickets will be displayed on the
+                            screen.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 4:</strong> Tap the booking that you want to cancel and proceed with the train
+                            ticket cancellation process.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 5:</strong> Choose the option to cancel tickets for all passengers or specific
+                            members of the group.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 6:</strong> After the cancellation of train tickets, the details of cancelled
+                            rail tickets will appear under the ‘Cancelled’ tab.
+                        </p>
+                    </li>
+                </ul>
+                <p>How much of a refund you will get for cancelling train tickets? You'll receive a refund for your
+                    train ticket payment with the deduction of the corresponding IRCTC cancellation charges. If you pay
+                    via UPI on redRail, you might even get instant refunds for cancellations.</p>
+            </div>
+            <div class="book-with">
+                <h2>IRCTC Cancellation Charges on Train Ticket Booking</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>You may opt for Free Cancellation for selected trains to save on IRCTC cancellation charges imposed
+                    on IRCTC train booking</p>
+            </div>
+
+            <div class="booking-time">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time Until Scheduled Departure </th>
+                            <th>Train Ticket Cancellation Charges (Per Passenger)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>More than 48 hours </td>
+                            <td>
+                                <div>
+                                    AC First Class and Executive Class - Rs. 240 + GST. <br>
+                                    AC 2-Tier and First Class - Rs. 200 + GST. <br>
+                                    AC 3-Tier, AC Chair car, and AC 3-Tier Economy - Rs. 180 + GST. <br>
+                                    Sleeper Class - Rs. 120 + GST. <br>
+                                    Second Class - Rs. 60 + GST <br>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Between 12 to 48 hours</td>
+                            <td>
+                                <div>25% of the train ticket fare subject to the minimum amounts mentioned above + GST
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Between 4 to 12 hours</td>
+                            <td>
+                                <div>25% of the train ticket fare subject to the minimum amounts mentioned above + GST
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="book-with">
+                <h2>About IRCTC</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>IRCTC (Indian Railway Catering and Tourism Corporation) is a subsidiary of the Indian Railways and is
+                    responsible for managing online train ticket booking, catering services, and tourism activities.
+                    IRCTC was established in 1999 to improve the passenger experience and provide modern and efficient
+                    services to Indian railway users. <br>
+
+                    IRCTC is the official website of the Indian Railways for online train ticket booking, which allows
+                    users to book train tickets, check seat availability, and access various other travel-related
+                    services. <br>
+
+                    Millions of users use the IRCTC ticket booking platform to book train tickets. If you haven’t
+                    registered with IRCTC, all you have to do is visit the official website, click on the register link,
+                    fill in the basic, personal and address information, and click on the register button. Once the
+                    registration is completed, you will get a pop-up message asking if the email and mobile number you
+                    entered are correct. Click on the ok button to complete the registration process. <br>
+
+                    Besides train booking, IRCTC next generation ticket booking platform manages other services such as
+                    catering, tourism, and online shopping. It operates a chain of food plazas and restaurants across
+                    various railway stations in India, providing quality food and beverages to railway passengers. <br>
+
+                    IRCTC has played a significant role in modernising the Indian Railways and improving the passenger
+                    experience by providing a range of services and facilities to millions of Indian railway users. <br>
+
+                    IRCTC has partnered with redBus to facilitate train ticket booking via redRail. To book train
+                    tickets, you must have an IRCTC account. If not, it is recommended that one be created. Note that
+                    the IRCTC registration is free and requires a mobile number and email ID to create the account.
+                    Check the stepwise process to create IRCTC login credentials.
+                </p> <br>
+                <p><strong>How to Create an IRCTC Account?</strong></p> <br>
+                <p>Below are the stepwise instructions on how to create an IRCTC account.</p>
+                <ul>
+                    <li>
+                        <p><strong>Step 1:</strong> Visit the IRCTC website.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 2:</strong> A page will appear where you must enter your User ID and password
+                            and confirm the password. Then, you can enter the security question if you ever forget the
+                            password. The security question entered will help you reset the password in future.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 3:</strong> Enter your details (Name, Gender, Date of Birth, Email ID, Mobile
+                            number, Nationality, etc), followed by the address.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 4:</strong> Enter the Captcha code and click the submit registration button.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 5:</strong> A pop-up will appear where you must click the OK button.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 6:</strong> Click the “ I Agree on Terms and Conditions” and the Accept button.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 7:</strong> A page will be displayed showing successful registration.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 8:</strong> You will receive an email with a user ID, password and activation
+                            link.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 9:</strong> Click on the link sent via email and enter the User ID and password
+                            to activate the IRCTC account.
+                        </p>
+                    </li>
+                    <li>
+                        <p>S<strong>tep 10:</strong> Enter the OTP sent on the mobile number and email for verification
+                            to complete the activation process.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="book-with">
+                <h2>Different Quotas for IRCTC Rail Ticket Booking</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>Below are the different quotas for train ticket bookings in India.</p>
+                <ul>
+                    <li>
+                        <p><strong>General Quota:</strong> This is the usual booking option for all commuters. You can
+                            book train reservations up to 120 days in advance.</p>
+                    </li>
+                    <li>
+                        <p><strong>Tatkal Quota:</strong> Reserved for passengers who need to make travel on short
+                            notice. You can book tickets under this quota one day in advance.</p>
+                    </li>
+                    <li>
+                        <p><strong>Premium Tatkal Quota:</strong> This is similar to Tatkal Reservation but this option
+                            is more expensive and is intended for passengers who need to travel at very short notice.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Ladies Quota:</strong> Exclusively for female passengers and can be booked up to 120
+                            days in advance. Women can use the ladies quota to get concessions on train tickets and
+                            enjoy the perks. </p>
+                    </li>
+                    <li>
+                        <p><strong>Lower Berth Quota:</strong> Reserved for senior citizens, differently-abled
+                            passengers, and pregnant women</p>
+                    </li>
+                    <li>
+                        <p><strong>Foreign Tourist Quota:</strong> Intended for foreign tourists visiting India.</p>
+                    </li>
+                    <li>
+                        <p><strong>Duty Pass Quota:</strong> Reserved for government officials and employees of the
+                            public sector on official travel. </p>
+                    </li>
+                    <li>
+                        <p><strong>Parliament House Quota:</strong> Reserved for Members of Parliament and other
+                            dignitaries.</p>
+                    </li>
+                    <li>
+                        <p><strong>Defence Quota:</strong> Specifically for defence personnel and their dependents.</p>
+                    </li>
+                </ul>
+                <p>It is important to note that availability and eligibility for these different types of bookings may
+                    vary depending on the train and route.</p>
+            </div>
+            <div class="book-with">
+                <h2>How to Book an IRCTC Tatkal Train Ticket?</h2>
+            </div>
+            <div class="redRail-irctc">
+                <p>Tatkal train tickets are available under the Indian Railways Tatkal scheme, which is also available
+                    for online railway booking. With this scheme, you can book train tickets online one day before the
+                    departure. However, the Tatkal ticket prices are higher than those of the standard ones. The price
+                    hike can be 10-30% from the base price, varying across different classes. <br>
+
+                    The windows for Tatkal train ticket booking is open a day before the departure from the originating
+                    station. You must ensure that tickets are booked within the allotted Tatkal train ticket booking
+                    time to get confirmed seats. Tatkal railway ticket booking can be challenging due to the limited
+                    availability of tickets. You can book Tatkal train tickets for up to 4 passengers with a single in a
+                    single PNR. <br>
+
+                    There is no refund for the cancelled tickets. There will be a standard deduction of cancellation
+                    charges. However, if you get a waiting list ticket, you can cancel the tickets subject to standard
+                    cancellation charge</p> <br>
+                <p><strong>Stepwise Instructions on Online Tatkal Train Ticket Booking</strong></p> <br>
+                <ul style="list-style: none; margin-left: -40px;">
+                    <li>
+                        <p>Below is a step-by-step tutorial on booking a Tatkal train ticket. </p>
+                    </li>
+                    <li>
+                        <p><strong>Step 1:</strong> Visit the redRail website or application one day before the journey
+                            date.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 2:</strong> Enter the origin and destination station details.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 3:</strong> Enter the journey date</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 4:</strong> Click on the “ Search Button”</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 5:</strong> A list of Tatkal tickets will appear on the screen.</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 7:</strong> Choose the payment method</p>
+                    </li>
+                    <li>
+                        <p><strong>Step 8:</strong> Enter IRCTC login ID and password to confirm the ticket booking.</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="book-with">
+                <h2>FAQs about Train Ticket Booking</h2>
+            </div>
+            <div class="faq-section">
+                <div class="faq-section-flix">
+                    <div>
+                        What are the different modes of payment on redRail?
+                    </div>
+                    <div>
+                        <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Do you need to pre-book train tickets?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    How to cancel train tickets on redRail?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Does redRail allow cancellation after the date of departure?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Is it possible to show the train ticket on my phone?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Can I get a Refund on Tatkal Tickets?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    What is the best time to book train tickets?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Are there any concessions for children and infants on trains?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Is ID proof required for e-ticket for all passengers?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    How can I change my name on an online train ticket?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="faq-section-flix">
+                <div>
+                    Can I get an online train ticket concession for students?
+                </div>
+                <div>
+                    <img style="transform: rotate(85deg);" src="/images/chevron_right.svg" alt="">
+                </div>
+            </div>
+            <div class="book-with">
+                <h2>redRail is featured on</h2>
+            </div>
+            <div class="features">
+                <img src="/images/the_hindu.webp" alt="" width="100%" height="100%">
+                <img src="/images/toi.webp" alt="" width="100%" height="100%">
+                <img src="/images/zee_business.webp" alt="" width="100%" height="100%">
+                <img src="/images/nbt.webp" alt="" width="100%" height="100%">
+                <img src="/images/india_today.webp" alt="" width="100%" height="100%">
+            </div>
+            <div class="book-with">
+                <h2>redRail Blogs</h2>
+            </div>
+            <div class="mainbook-blogs">
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/change-boarding-stations-in-IRCTC_1727950511.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>How to Change Boarding Stations in IRCTC?</div>
+                        <p>August 21, 2024</p>
+                    </div>
+                </div>
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/busiest-railway-stations_1727950439.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>Busiest Railway Stations in India</div>
+                        <p>September 19, 2024</p>
+                    </div>
+                </div>
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/train-ticket-booking-for-PwDs_1727950608.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>What is the Concessional Booking Process for People with Disabilities?</div>
+                        <p>August 27, 2024</p>
+                    </div>
+                </div>
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/double_decker_express_train_1727950537.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>Double Decker Trains in Indian Railways</div>
+                        <p>September 17, 2024</p>
+                    </div>
+                </div>
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/Tips-to-travel-with-pets-in-trains_1727950583.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>How to Travel with Pets on a Train in India?</div>
+                        <p>August 26, 2024</p>
+                    </div>
+                </div>
+                <div class="book-blogs">
+                    <div>
+                        <img src="./images/hacks-for-train-journey_1727950556.webp" alt="">
+                    </div>
+                    <div class="book-blogs-contant">
+                        <div>Simple Hacks for a Comfortable Train Journey</div>
+                        <p>August 19, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="train-footer">
+        
+
+        <div class="train-footer-left-block">
+            
+            <div class="footer-left-block-col">
+
+                <ul>
+                    <li>About Redbus</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Mobile Version</li>
+                    <li>redBus on Mobile</li>
+                    <li>Sitemap</li>
+                    <li>Offers</li>
+                    <li>Careers</li>
+                    <li>Values</li>
+                </ul>
+            </div>
+            <div class="footer-left-block-col">
+
+                <ul>
+                    <li>Info</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                    <li>Bus Operator Registration</li>
+                    <li>Agent Registration</li>
+                    <li>Insurance Partner</li>
+                    <li>User Agreement</li>
+                </ul>
+            </div>
+            <div class="footer-left-block-col">
+
+                <ul>
+                    <li>Global Sites</li>
+                    <li>India</li>
+                    <li>Singapore</li>
+                    <li>Malaysia</li>
+                    <li>Indonesia</li>
+                    <li>Peru</li>
+                    <li>Colombia</li>
+                </ul>
+            </div>
+            <div class="footer-left-block-col">
+
+                <ul>
+                    <li>Our Partners</li>
+                    <li>Goibibo Bus</li>
+                    <li>Goibibo Hotels</li>
+                    <li>Makemytrip Bus</li>
+                    <li>Makemytrip Hotels</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="train-footer-right-block">
+
+            <img style="width: 65px; height: 42px;" src="images/rb_logo.svg" alt="">
+            <p>redBus is the worlds largest online bus ticket booking service trusted by over 8 million happy customers
+                globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major
+                routes.</p>
+            <p>Ⓒ 2024 Redbus India Private Limited (formerly known as ‘Ibibo Group Private Limited’).</p>
+
+
+        </div>
+
+    </div> -->
+    <footer>
+
+        <!-- <div class="footer-topbox">
+            <div class="popular-box">
+                <p class="popular-box-heading">Popular Cities</p>
+                <i style="font-size: 15px;" class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="popular-box">
+                <p class="popular-box-heading">Popular Bus Operators</p>
+                <i style="font-size: 15px;" class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </div> -->
+        <div class="footer-middle-box">
+
+            <div class="middle-column1">
+                <img style="width: 100px; height: 65px;" src="images/rdc-redbus-logo.svg" alt="">
+                <p> redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                    customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile
+                    apps for all major routes.</p>
+
+            </div>
+            <div class="middle-column2">
+                <ul>
+                    <strong>
+                        <li>About redBus</li>
+                    </strong>
+                    <li>About us</li>
+                    <li>Investor Relations</li>
+                    <li>Contact us</li>
+                    <li>Mobile version</li>
+                    <li>redBus on mobile</li>
+                    <li>Sitemap</li>
+                    <li>Offers</li>
+                    <li>Careers</li>
+                    <li>Values </li>
+
+                </ul>
+
+            </div>
+
+            <div class="middle-column2">
+                <ul>
+                    <strong>
+                        <li>Info</li>
+                    </strong>
+                    <li>T&C</li>
+                    <li>Privacy policy</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                    <li>Bus operator registration</li>
+                    <li>Agent registration</li>
+                    <li>Insurance partner</li>
+                    <li>User agreement</li>
+                    <li>Primo Bus</li>
+                    <li>Bus Timetable</li>
+
+                </ul>
+
+            </div>
+            <div class="middle-column2">
+                <ul>
+                    <strong>
+                        <li>Global Sites</li>
+                    </strong>
+                    <li>India</li>
+                    <li>Singapore</li>
+                    <li>Malaysia</li>
+                    <li>Indonesia</li>
+                    <li>Peru</li>
+                    <li>Colombia</li>
+                    <li>Cambodia</li>
+                    <li>Vietnam</li>
+
+                </ul>
+
+            </div>
+            <div class="middle-column2">
+                <ul>
+                    <strong>
+                        <li>Our Partners</li>
+                    </strong>
+                    <li>Goibibo Bus</li>
+                    <li>Goibibo Hotels</li>
+                    <li>Makemytrip Hotels</li>
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="footer-bottom-box">
+            <p>Ⓒ 2024 Redbus India Pvt Ltd. All rights reserved</p>
+            <div class="social-saction">
+                <a href=""><img src="images/social_facebook_new.svg" alt=""></a>
+                <a href=""><img src="images/social_linkedin_new.svg" alt=""></a>
+                <a href=""><img src="images/social_twitter_new.svg" alt=""></a>
+                <a href=""><img src="images/social_instagram_new.svg" alt=""></a>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
